@@ -20,6 +20,7 @@ public final class Poke extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
+        Bukkit.getLogger().info("Poke Disabled!");
     }
 
 
