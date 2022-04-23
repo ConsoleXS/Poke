@@ -20,7 +20,6 @@ public final class Poke extends JavaPlugin implements Listener {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
     }
 
 
