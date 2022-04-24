@@ -4,3 +4,7 @@ main: com.consolex.poke.Poke
 api-version: 1.18
 authors: [ ConsoleX ]
 description: A plugin that allows players to @ other players in chat. 
+commands:
+  poke:
+    desciption: Opens sound preferences
+    usage: /<command>
