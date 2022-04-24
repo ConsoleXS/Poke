@@ -13,9 +13,10 @@ public final class Poke extends JavaPlugin implements Listener {
 
     @Override
     public void onEnable() {
-        Bukkit.getLogger().info(ChatColor.GREEN + "----------");
-        Bukkit.getLogger().info(ChatColor.YELLOW + "Poke Enabled!" + ChatColor.RED + "@1.0");
-        Bukkit.getLogger().info(ChatColor.GREEN + "----------");
+        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "----------");
+        getServer().getConsoleSender().sendMessage(ChatColor.YELLOW + "Poke Enabled! " + ChatColor.AQUA + "@1.0");
+        getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "----------");
+        getServer().getPluginManager().registerEvents(this, this);
     }
 
     @Override
@@ -28,11 +29,11 @@ public final class Poke extends JavaPlugin implements Listener {
     public void chatEvent(AsyncPlayerChatEvent event)
     {
         String msg = event.getMessage();
-        for (Player p : Bukkit.getOnlinePlayers())
+        for (Player p : Bukkit.getServer().getOnlinePlayers())
         {
             if (msg.contains("@" + p.getName()))
             {
-                msg =  msg.replaceAll("@" + p.getName(), ChatColor.YELLOW + "@");
+                msg =  msg.replaceAll("@" + p.getName(), ChatColor.YELLOW + "@" + p.getName() + ChatColor.WHITE);
                 p.playSound(p.getLocation(), Sound.ENTITY_EXPERIENCE_ORB_PICKUP, 1,  1);
             }
         }
