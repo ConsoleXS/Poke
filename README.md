@@ -16,7 +16,7 @@ Players can write @<playername> to send a sound that will be
 played to the player recieving the ping.
 ``` 
 ![image info](./PokeExample.png)
-
+s
 ## Poke Cooldown
 ```(config.yml)```
 ```
@@ -28,7 +28,9 @@ the "cooldown" value.
 ## Sound change
 ```
 Players can use the command /poke to change their preffered sound 
-for getting poked. (GUI menu to change sounds)
+for getting poked. (GUI menu to change sounds) 
 ``` 
+>Note: Player settings do not get saved after the server is shut down!
+
 
 
