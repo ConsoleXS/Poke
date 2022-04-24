@@ -10,11 +10,12 @@ A Minecraft plugin which allows players to `ping (@)` each other in game.
 
 >Versions: 1.17+ Compatible (Spigot Servers)
 
-## `Usage: ` Poking other players
+## `Usage:` Poking other players
 ```
 Players can write @<playername> to send a sound that will be
 played to the player recieving the ping.
 ``` 
+![image info](./PokeExample.png)
 
 ## Poke Cooldown
 ```(config.yml)```
