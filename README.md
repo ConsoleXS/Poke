@@ -30,6 +30,7 @@ the "cooldown" value.
 Players can use the command /poke to change their preffered sound 
 for getting poked. (GUI menu to change sounds) 
 ``` 
+![image info](./SoundExample.png)
 >Note: Player settings do not get saved after the server is shut down!
 
 
