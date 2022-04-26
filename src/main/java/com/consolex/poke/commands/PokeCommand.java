@@ -54,7 +54,12 @@ public class PokeCommand implements CommandExecutor {
             empty_meta.setDisplayName(ChatColor.RED + "Reset " + ChatColor.WHITE + "sound to default");
             empty.setItemMeta(empty_meta);
 
-            ItemStack[] soundPreferenceItems = {empty, empty, amethyst, respawnAnchor, bell, slime, pling, empty, empty};
+            ItemStack pingColors = new ItemStack(Material.RED_CONCRETE, 1);
+            ItemMeta pingColors_meta = empty.getItemMeta();
+            pingColors_meta.setDisplayName("Change poke " + ChatColor.RED + "C" + ChatColor.YELLOW + "o" + ChatColor.GREEN + "l" + ChatColor.BLUE + "o" + ChatColor.LIGHT_PURPLE + "r" + ChatColor.DARK_AQUA + "s");
+            pingColors.setItemMeta(pingColors_meta);
+
+            ItemStack[] soundPreferenceItems = {empty, empty, amethyst, respawnAnchor, bell, slime, pling, empty, pingColors};
             gui.setContents(soundPreferenceItems);
             player.openInventory(gui);
 

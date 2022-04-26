@@ -8,3 +8,6 @@ commands:
   poke:
     desciption: Opens sound preferences
     usage: /<command>
+  pokecolor:
+    description: Changes poke colors
+    usage: /<command> color
